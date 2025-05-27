@@ -1,0 +1,21 @@
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+}
+
+.desert-grid{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    
+}
+
+.desert-word-title{
+    font-size: 40px;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    padding-bottom: 2%;
+    color: #26120a;
+}

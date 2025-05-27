@@ -1,0 +1,69 @@
+.top {
+  height: 70%;
+  position: relative;
+}
+.top img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+}
+/*Button*/
+.add-to-cart {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 70%;
+  background-color: white;
+  outline: none;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 4% 8%;
+  transform: translateX(22%) translateY(50%);
+  outline: 2px solid #a5a4a4;
+}
+/*Button Text*/
+.text {
+  font-weight: 500;
+  font-size: 16px;
+}
+.bottom {
+  min-height: 20%;
+  margin-top: 19%;
+}
+/*Increment & Decrement Buttons for when adding to cart*/
+.adjust-quantity-button{
+  display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    width: 70%;
+    background-color: #c63b0cdc;    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 4% 8%;
+    transform: translateX(22%) translateY(50%);
+    color: white;
+    outline: none;
+    display: none;
+}
+.desert-individual-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.desert-type {
+  color: #a39898;
+}
+.desert-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+.desert-price {
+  color: #f08f7e;
+  font-weight: bold;
+  font-size: 18px;
+}
