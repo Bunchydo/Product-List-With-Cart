@@ -1,7 +1,7 @@
 import DesertIndivdualComponent from "./desert-individual-component/desert-individual-component";
 import "./desert-component-holder.css";
 
-function DesertComponentHolder() {
+function DesertComponentHolder(props) {
   return (
     <div className="left-side">
       <div className="desert-word-title">Desserts</div>
@@ -16,6 +16,7 @@ function DesertComponentHolder() {
           desertType="Waffle"
           desertName="Waffle with Berries"
           desertPrice={6.5}
+          onAddToCart={props.onAddToCart}
         />
         <DesertIndivdualComponent
           desertImage={
@@ -27,6 +28,7 @@ function DesertComponentHolder() {
           desertType="Crème Brûlée"
           desertName="Vanilla Bean Crème Brûlée"
           desertPrice={7.0}
+          onAddToCart={props.onAddToCart}
         />
         <DesertIndivdualComponent
           desertImage={
@@ -38,6 +40,7 @@ function DesertComponentHolder() {
           desertType="Macaron"
           desertName="Macaron Mix of Five"
           desertPrice={8.0}
+          onAddToCart={props.onAddToCart}
         />{" "}
         <DesertIndivdualComponent
           desertImage={
@@ -49,6 +52,7 @@ function DesertComponentHolder() {
           desertType="Tiramisu"
           desertName="Classic Tiramisu"
           desertPrice={5.5}
+          onAddToCart={props.onAddToCart}
         />{" "}
         <DesertIndivdualComponent
           desertImage={
@@ -60,6 +64,7 @@ function DesertComponentHolder() {
           desertType="Baklava"
           desertName="Pistachio Baklava"
           desertPrice={4.0}
+          onAddToCart={props.onAddToCart}
         />{" "}
         <DesertIndivdualComponent
           desertImage={
@@ -71,6 +76,7 @@ function DesertComponentHolder() {
           desertType="Pie"
           desertName="Lemon Meringue Pie"
           desertPrice={5.0}
+          onAddToCart={props.onAddToCart}
         />{" "}
         <DesertIndivdualComponent
           desertImage={
@@ -82,6 +88,7 @@ function DesertComponentHolder() {
           desertType="Cake"
           desertName="Red Velvet Cake"
           desertPrice={4.5}
+          onAddToCart={props.onAddToCart}
         />{" "}
         <DesertIndivdualComponent
           desertImage={
@@ -93,6 +100,7 @@ function DesertComponentHolder() {
           desertType="Brownie"
           desertName="Salted Caramel Brownie"
           desertPrice={5.5}
+          onAddToCart={props.onAddToCart}
         />{" "}
         <DesertIndivdualComponent
           desertImage={
@@ -104,6 +112,8 @@ function DesertComponentHolder() {
           desertType="Panna Cotta"
           desertName="Vanilla Panna Cotta"
           desertPrice={6.5}
+          
+          onAddToCart={props.onAddToCart}
         />
       </div>
     </div>

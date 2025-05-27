@@ -33,22 +33,43 @@
   margin-top: 19%;
 }
 /*Increment & Decrement Buttons for when adding to cart*/
-.adjust-quantity-button{
+.adjust-quantity-button {
   display: flex;
-    justify-content: space-between;
-    gap: 5%;
-    width: 70%;
-    background-color: #c63b0cdc;    outline: none;
-    border: none;
-    position: absolute;
-    bottom: 0;
-    border-radius: 20px;
-    padding: 4% 8%;
-    transform: translateX(22%) translateY(50%);
-    color: white;
-    outline: none;
-    display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 70%;
+  background-color: #e95827;
+  outline: none;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 4% 8%;
+  transform: translateX(22%) translateY(50%);
+  color: white;
+  outline: none;
+  display: none;
 }
+.adjust-quantity-button img {
+  border: 1.5px solid white;
+  border-radius: 50%;
+}
+.plus-icon:hover {
+  cursor: pointer;
+}
+.minus-icon:hover {
+  cursor: pointer;
+}
+.plus-icon {
+  width: 17px;
+  height: 17px;
+}
+.minus-icon {
+  width: 17px;
+  height: 17px;
+}
+
 .desert-individual-component {
   display: flex;
   flex-direction: column;
