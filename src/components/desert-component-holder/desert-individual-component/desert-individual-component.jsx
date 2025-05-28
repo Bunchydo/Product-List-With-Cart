@@ -62,7 +62,7 @@ function DesertIndividualComponent(props) {
           onClick={handleAdd}
         >
           <div className="shopping-icon">
-            <img src="images/icon-add-to-cart.svg" alt="" />
+            <img src="/images/icon-add-to-cart.svg" alt="" />
           </div>
           <div className="text">Add to Cart</div>
         </button>
