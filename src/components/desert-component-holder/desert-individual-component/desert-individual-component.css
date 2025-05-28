@@ -74,6 +74,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: auto;
 }
 
 .desert-type {
@@ -87,4 +88,33 @@
   color: #f08f7e;
   font-weight: bold;
   font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .desert-individual-component {
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   max-height: 500px;
+   gap: 8%;
+    
+  }
+  .top {
+    height: 50%;
+  }
+  .desert-image {
+    max-width: 100%;
+    height: 100%;
+  }
+  .desert-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* or 'cover' if you want it to fill container even if cropping */
+  }
+  .bottom {
+    margin-top: 0%;
+    min-height: 30%;
+  }
+
 }

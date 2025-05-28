@@ -62,3 +62,88 @@
   font-weight: 500;
   display: none;
 }
+
+.order-confirmed-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 40%;
+  min-height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3%;
+  box-sizing: border-box;
+  display: none;
+  z-index: 2000;
+  border-radius: 15px;
+}
+.order-confirmed-title {
+  font-size: 45px;
+  font-weight: bold;
+}
+.start-new-order {
+  width: 100%;
+  background-color: #c63b0cdc;
+  color: white;
+  border: none;
+  padding: 3% 6%;
+  border-radius: 20px;
+  margin-top: 10%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dessert-items-order {
+  background-color: #fff7f0c3;
+  border-radius: 15px;
+  padding: 3%;
+}
+.enjoy-your-food {
+  color: #8a8787;
+  margin-bottom: 3%;
+}
+.overlay {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7e7d7b66;
+  z-index: 1999;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: white;
+    min-height: 40%;
+    justify-content: space-between;
+    padding: 2%;
+    border-radius: 5%;
+  }
+  .order-confirmed-container {
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7%;
+    box-sizing: border-box;
+    display: none;
+    z-index: 2000;
+    border-radius: 15px;
+  }
+}

@@ -1,7 +1,8 @@
 import "./cart-component.css";
 import OrderItemComponent from "./order-item-component/order-item-component.jsx";
-
+import { useState } from "react";
 function CartComponent(props) {
+  const [clicked, setClicked] = useState(false);
   // Condition: at least one item in cart
   const hasItems = props.cartItems.length > 0;
 
@@ -14,6 +15,10 @@ function CartComponent(props) {
   const total = props.cartItems
     .reduce((acc, item) => acc + item.price * item.quantity, 0)
     .toFixed(2);
+
+  //TO toggle cofirmation container
+  const showOrderContainer = { display: clicked == true ? "flex" : "none" };
+const showOverlay = {display: clicked == true ? "block" :"none"};
   return (
     <div className="cart-container">
       <div className="your-cart-title">
@@ -39,6 +44,7 @@ function CartComponent(props) {
             name={item.name}
             price={item.price}
             quantity={item.quantity}
+            showRemoveIcon={true} // show remove icon normally
           />
         ))
       )}
@@ -50,10 +56,7 @@ function CartComponent(props) {
       </div>
 
       {/* Carbon Delivery info – only show when cart not empty */}
-      <div
-        className="carbon-delivery-container"
-        style={showStyle}
-      >
+      <div className="carbon-delivery-container" style={showStyle}>
         <div className="carbon-delivery-img">
           <img
             src="../../../public/images/icon-carbon-neutral.svg"
@@ -69,9 +72,43 @@ function CartComponent(props) {
       <button
         className="confirm-order"
         style={showButton}
+        onClick={() => setClicked(true)}
       >
         Confirm Order
       </button>
+
+      {/*Order Confirmed Container*/}
+      <div className="order-confirmed-container" style={showOrderContainer}>
+        <div className="checkmark">
+          <img src="../../../public/images/icon-order-confirmed.svg" alt="" />
+        </div>
+        <div className="order-confirmed-title">Order Confirmed</div>
+        <div className="enjoy-your-food">We hope you enjoy your food!</div>
+
+        <div className="dessert-items-order">
+          {props.cartItems.map((item, index) => (
+            <OrderItemComponent
+              key={index}
+              name={item.name}
+              price={item.price}
+              quantity={item.quantity}
+              showRemoveIcon={false} // hide remove image here
+            />
+          ))}
+        </div>
+
+        {/* Order Total – only show when cart not empty */}
+        <div className="order-total" style={showStyle}>
+          <div className="order-total-title">Order Total</div>
+          <div className="order-total-price">${total}</div>
+        </div>
+
+        {/* Start New Order button – only show when cart not empty */}
+        <button className="start-new-order" style={showButton} onClick={() => window.location.reload()}>
+          Start New Order
+        </button>
+      </div>
+      <div className="overlay" style={showOverlay}></div>
     </div>
   );
 }

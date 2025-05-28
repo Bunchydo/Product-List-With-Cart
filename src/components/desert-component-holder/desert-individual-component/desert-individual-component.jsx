@@ -45,14 +45,14 @@ function DesertIndividualComponent(props) {
   return (
     <div className="desert-individual-component">
       <div className="top">
-        <div
-          style={{
+        
+        <div className="desert-image"  style={{
           
-            border:clicked ? "3px solid #d8624e": "none",
-            borderRadius:clicked ? "10px" : "none"
-          }}
-        >
-          {props.desertImage}
+          border:clicked ? "3px solid #d8624e": "none",
+          borderRadius:clicked ? "10px" : "none"
+        }}>
+            {props.desertImage}
+         
         </div>
 
         {/* Add to cart button */}

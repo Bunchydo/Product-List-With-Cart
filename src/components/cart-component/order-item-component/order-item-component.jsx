@@ -1,4 +1,4 @@
-import './order-item-component.css'
+import "./order-item-component.css";
 
 function OrderItemComponent(props) {
   // Ensure both values are numbers
@@ -16,15 +16,15 @@ function OrderItemComponent(props) {
           <div className="item-price-before-calculation">
             ${unitPrice.toFixed(2)}
           </div>
-          <div className="item-price-after-calculation">
-            ${total}
-          </div>
+          <div className="item-price-after-calculation">${total}</div>
         </div>
       </div>
 
-      <div className="remove-order">
-        <img src="../../../../public/images/icon-remove-item.svg" alt="" />
-      </div>
+      {props.showRemoveIcon && (
+        <div className="remove-order">
+          <img src="../../../../public/images/icon-remove-item.svg" alt="" />
+        </div>
+      )}
     </div>
   );
 }
