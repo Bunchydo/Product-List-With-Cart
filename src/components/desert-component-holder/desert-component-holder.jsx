@@ -57,7 +57,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/image-baklava-desktop.jpg"
+              src="/images/image-baklava-desktop.jpg"
               alt="Baklava"
             />
           }
