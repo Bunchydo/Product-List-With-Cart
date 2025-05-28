@@ -9,7 +9,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-waffle-desktop.jpg"
+              src="/images/image-waffle-desktop.jpg"
               alt="Waffle with Berries"
             />
           }
@@ -21,7 +21,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-creme-brulee-desktop.jpg"
+              src="/images/image-creme-brulee-desktop.jpg"
               alt="Creme Brulee"
             />
           }
@@ -33,7 +33,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-macaron-desktop.jpg"
+              src="/images/image-macaron-desktop.jpg"
               alt="Macaron"
             />
           }
@@ -45,7 +45,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-tiramisu-desktop.jpg"
+              src="/images/image-tiramisu-desktop.jpg"
               alt="Tiramisu"
             />
           }
@@ -57,7 +57,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-baklava-desktop.jpg"
+              src="/image-baklava-desktop.jpg"
               alt="Baklava"
             />
           }
@@ -69,7 +69,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-meringue-desktop.jpg"
+              src="/images/image-meringue-desktop.jpg"
               alt="Lemon Meringue Pie"
             />
           }
@@ -81,7 +81,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-cake-desktop.jpg"
+              src="/images/image-cake-desktop.jpg"
               alt="Red Velvet Cake"
             />
           }
@@ -93,7 +93,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-brownie-desktop.jpg"
+              src="/images/image-brownie-desktop.jpg"
               alt="Brownie"
             />
           }
@@ -105,7 +105,7 @@ function DesertComponentHolder(props) {
         <DesertIndivdualComponent
           desertImage={
             <img
-              src="/public/images/image-panna-cotta-desktop.jpg"
+              src="/images/image-panna-cotta-desktop.jpg"
               alt="Panna Cotta"
             />
           }

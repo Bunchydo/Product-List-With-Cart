@@ -62,7 +62,7 @@ function DesertIndividualComponent(props) {
           onClick={handleAdd}
         >
           <div className="shopping-icon">
-            <img src="/public/images/icon-add-to-cart.svg" alt="" />
+            <img src="images/icon-add-to-cart.svg" alt="" />
           </div>
           <div className="text">Add to Cart</div>
         </button>
@@ -77,14 +77,14 @@ function DesertIndividualComponent(props) {
         >
           <div className="minus-icon" onClick={decrementQuantity}>
             <img
-              src="/public/images/icon-decrement-quantity.svg"
+              src="/images/icon-decrement-quantity.svg"
               alt=""
             />
           </div>
           <div className="text">{amount}</div>
           <div className="plus-icon" onClick={incrementQuantity}>
             <img
-              src="/public/images/icon-increment-quantity.svg"
+              src="/images/icon-increment-quantity.svg"
               alt=""
             />
           </div>

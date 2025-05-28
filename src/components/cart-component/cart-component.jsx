@@ -29,7 +29,7 @@ const showOverlay = {display: clicked == true ? "block" :"none"};
         <>
           <div className="cart-image">
             <img
-              src="../../public/images/illustration-empty-cart.svg"
+              src="images/illustration-empty-cart.svg"
               alt="Empty cart"
             />
           </div>
@@ -59,7 +59,7 @@ const showOverlay = {display: clicked == true ? "block" :"none"};
       <div className="carbon-delivery-container" style={showStyle}>
         <div className="carbon-delivery-img">
           <img
-            src="../../../public/images/icon-carbon-neutral.svg"
+            src="/images/icon-carbon-neutral.svg"
             alt="Carbon neutral delivery"
           />
         </div>
@@ -80,7 +80,7 @@ const showOverlay = {display: clicked == true ? "block" :"none"};
       {/*Order Confirmed Container*/}
       <div className="order-confirmed-container" style={showOrderContainer}>
         <div className="checkmark">
-          <img src="../../../public/images/icon-order-confirmed.svg" alt="" />
+          <img src="/images/icon-order-confirmed.svg" alt="" />
         </div>
         <div className="order-confirmed-title">Order Confirmed</div>
         <div className="enjoy-your-food">We hope you enjoy your food!</div>
