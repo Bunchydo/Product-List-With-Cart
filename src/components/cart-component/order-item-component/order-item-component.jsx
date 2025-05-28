@@ -22,7 +22,7 @@ function OrderItemComponent(props) {
 
       {props.showRemoveIcon && (
         <div className="remove-order">
-          <img src="../../../../public/images/icon-remove-item.svg" alt="" />
+          <img src="/public/images/icon-remove-item.svg" alt="" />
         </div>
       )}
     </div>
